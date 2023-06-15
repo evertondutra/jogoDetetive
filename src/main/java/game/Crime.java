@@ -5,9 +5,9 @@ public class Crime {
     Vitima vitima = new Vitima();
     Game game = new Game();
 
-    private String local;
-    private String autor;
-    private String arma;
+    private final String local;
+    private final String autor;
+    private final String arma;
 
     public Crime() {
         this.local = game.getLocalCrime();
