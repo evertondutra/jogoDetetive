@@ -23,36 +23,32 @@ public class Main {
         game.boasVindas(nomeDetetive);
 
 
-
-        while (true){
+        do {
             vitima.dicaLocalCrime(crime.getLocal());
 
             localEscolhido = game.escolherLocal(game.getLocais());
 
             game.verificandoLocalEscolhido(localEscolhido, crime);
 
-            if (crime.toString().contains(localEscolhido)){break;}
-        }
+        } while (!crime.toString().contains(localEscolhido));
 
 
-        while (true){
+        do {
             vitima.dicaEstadoCorporal(crime.getArma());
 
             armaEscolhida = game.escolherArma(vitima.getArmas());
 
             game.verificandoArmaEscolhida(armaEscolhida, crime);
 
-            if (crime.toString().contains(armaEscolhida)){break;}
-        }
+        } while (!crime.toString().contains(armaEscolhida));
 
-        while (true){
+        do {
 
             suspeitoEscolhido = game.escolherSuspeito(game.getSuspeitos());
 
             game.verificandoSuspeitoEscolhido(suspeitoEscolhido, crime);
 
-            if (crime.toString().contains(suspeitoEscolhido)){break;}
-        }
+        } while (!crime.toString().contains(suspeitoEscolhido));
 
         System.out.println(crime);
 

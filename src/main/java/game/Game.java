@@ -80,7 +80,6 @@ public class Game {
                 resposta = scan.nextInt();
                 if (resposta >= 1 && resposta <= locais.size()) {
                     localEscolhido = locais.get(resposta - 1);
-                    locais.remove(localEscolhido);
                     return  localEscolhido;
                 } else {
                     System.out.println("Escolha entre os locais suspeitos");
@@ -152,7 +151,7 @@ public class Game {
             int resposta;
             String suspeitoEscolhido;
             try{
-                System.out.println("Escolha pelo número a possível arma usado no crime!");
+                System.out.println("Escolha pelo número o possível suspeito!");
                 for (int i = 0; i < suspeitos.size(); i++){
                     String suspeito = suspeitos.get(i);
                     System.out.println((i + 1) + " - " + suspeito );
