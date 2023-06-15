@@ -57,11 +57,11 @@ public class Vitima {
             System.out.println("-------------------------------------------------------------------------------");
         } else if (local == "Boate" || local == "Hospital" || local == "Hotel") {
             System.out.println("-------------------------------------------------------------------------------");
-            System.out.println("O local também pode funcionar durante a madrugada");
+            System.out.println("O local também pode funcionar durante a madrugada.");
             System.out.println("-------------------------------------------------------------------------------");
         }else if (local == "Banco" || local == "Prefeitura"){
             System.out.println("-------------------------------------------------------------------------------");
-            System.out.println("Ninguém gosta de ir a este local, mas as vezes é preciso ir até lá");
+            System.out.println("Ninguém gosta de ir a este local, mas as vezes é preciso ir até lá.");
             System.out.println("-------------------------------------------------------------------------------");
         }else {
             System.out.println("-------------------------------------------------------------------------------");
@@ -75,16 +75,46 @@ public class Vitima {
         System.out.println("DICA: ");
         if (arma == "Faca" || arma == "Espingarda" || arma == "Tesoura") {
             System.out.println("-------------------------------------------------------------------------------");
-            System.out.println("No corpo da vítima foram encontrados perfurações e sangue espalhados pelo local");
+            System.out.println("No corpo da vítima foram encontrados perfurações e sangue espalhados pelo local.");
             System.out.println("-------------------------------------------------------------------------------");
         } else if (arma == "Veneno" || arma == "Gás") {
             System.out.println("-------------------------------------------------------------------------------");
-            System.out.println("No corpo da vítima não foram encontrados perfurações nem marcas de agressões");
+            System.out.println("No corpo da vítima não foram encontrados perfurações nem marcas de agressões.");
             System.out.println("-------------------------------------------------------------------------------");
         }else {
             System.out.println("-------------------------------------------------------------------------------");
-            System.out.println("A vítima estava com marcas de agressões por todo o corpo");
+            System.out.println("A vítima estava com marcas de agressões por todo o corpo.");
             System.out.println("-------------------------------------------------------------------------------");
+        }
+
+    }
+
+    public void dicaAutorCrime(String autor){
+        System.out.println("DICA: ");
+        switch (autor) {
+            case "Coveiro - Sérgio Soturno":
+            case "Florista - Dona Branca":
+                System.out.println("-------------------------------------------------------------------------------");
+                System.out.println("O local onde o autor do crime passa mais tempo, o ar circula livremente.");
+                System.out.println("-------------------------------------------------------------------------------");
+                break;
+            case "Dançarina - Srta Rosa":
+            case "Médica - Dona Violeta":
+                System.out.println("-------------------------------------------------------------------------------");
+                System.out.println("O autor do crime também trabalha na durante a madrugada.");
+                System.out.println("-------------------------------------------------------------------------------");
+                break;
+            case "Sarjento - Bigode":
+            case "Chef de Cozinha - Tony Gourmet":
+                System.out.println("-------------------------------------------------------------------------------");
+                System.out.println("O autor do crime tem o ar, o tom de mandão.");
+                System.out.println("-------------------------------------------------------------------------------");
+                break;
+            default:
+                System.out.println("-------------------------------------------------------------------------------");
+                System.out.println("O autor do crime esta sempre disposto a ajudar, mas recebe para isso.");
+                System.out.println("-------------------------------------------------------------------------------");
+                break;
         }
 
     }

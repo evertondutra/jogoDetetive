@@ -43,6 +43,7 @@ public class Main {
         } while (!crime.toString().contains(armaEscolhida));
 
         do {
+            vitima.dicaAutorCrime(crime.getAutor());
 
             suspeitoEscolhido = game.escolherSuspeito(game.getSuspeitos());
 
